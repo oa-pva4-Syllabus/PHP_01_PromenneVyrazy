@@ -17,4 +17,9 @@
  * Proměnná alfa obsahuje hodnotu beta
  * Proměnná beta obsahuje hodnotu alfa
  * Proměnná gama obsahuje hodnotu beta plus gama
+ * 
+ * Výsledek ověřte s konečným stavem:
+ * alfa = 350
+ * beta = 200
+ * gama = 300
  * */
