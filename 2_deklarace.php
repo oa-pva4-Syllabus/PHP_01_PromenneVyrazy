@@ -36,7 +36,7 @@
  */
 
 
-/* --- ÚKOL 3 --- [hodnoceno automaticky]
+/* --- ÚKOL 3 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
  *
  * Deklarujte proměnnou `$nothing` a nastavte jí hodnotu `null`.
  * Vypište ji funkcí `var_dump()`.

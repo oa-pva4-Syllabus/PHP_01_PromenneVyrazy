@@ -10,7 +10,7 @@
 // čím jste řádky oddělili.
 
 
-/* --- ÚKOL 1 --- [hodnoceno automaticky]
+/* --- ÚKOL 1 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
  *
  * Deklarujte proměnné `$a` = 15 a `$b` = 4.
  * Proveďte s nimi pět matematických operací a každý výsledek uložte

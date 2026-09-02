@@ -7,7 +7,7 @@
 // Konvence: názvy proměnných anglicky, camelCase, bez diakritiky.
 
 
-/* --- ÚKOL 1 --- [hodnoceno automaticky]
+/* --- ÚKOL 1 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
  *
  * Deklarujte proměnné `$firstName` (vaše jméno) a `$lastName` (vaše příjmení).
  * Stejnou větu pak vypište TŘEMI různými způsoby, každý na samostatný řádek

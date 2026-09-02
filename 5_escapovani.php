@@ -2,16 +2,17 @@
 // Blok cvičení 01 - Proměnné a výstupy
 // Cvičení 5 - Escapování
 //
-// Kde výstup zkontrolujete: v konzoli i v prohlížeči; u úkolu 1 se dívejte
-// do zdrojového kódu stránky (postup je v README.md).
+// Kde výstup zkontrolujete: úkoly 1, 2 a 4 v prohlížeči ve zdrojovém kódu
+// stránky, úkol 3 v konzoli - prohlížeč tabulátor slévá do jedné mezery,
+// takže byste v něm rozdíl nepoznali (postup je v README.md).
 // Konvence: názvy proměnných anglicky, camelCase, bez diakritiky.
 //
 // Escapování = zápis znaku, který by jinak v řetězci znamenal něco jiného.
 // Escapovací sekvence (\n, \t, \", \$) fungují POUZE v dvojitých uvozovkách.
-// V apostrofech mají zvláštní význam jen \' a \.
+// V apostrofech mají zvláštní význam jen \' a \\.
 
 
-/* --- ÚKOL 1 --- [hodnoceno automaticky]
+/* --- ÚKOL 1 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
  *
  * Deklarujte proměnnou `$imageUrl` s hodnotou `https://placehold.co/200x100`.
  *
@@ -32,7 +33,7 @@
  */
 
 
-/* --- ÚKOL 2 --- [hodnoceno automaticky]
+/* --- ÚKOL 2 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
  *
  * Deklarujte proměnnou `$userName` s hodnotou `Karel`.
  * Vypište dva řádky:
@@ -65,7 +66,7 @@
  */
 
 
-/* --- ÚKOL 4 --- [hodnoceno automaticky]
+/* --- ÚKOL 4 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
  *
  * Bonus - proč se escapování řeší i kvůli bezpečnosti.
  *

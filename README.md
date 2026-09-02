@@ -12,9 +12,14 @@ předchozím.
 | `2_deklarace.php` | Deklarace proměnných, datové typy, konstanty | konzole |
 | `3_vystup.php` | Matematické operace, výpis, záměna hodnot | konzole |
 | `4_spojovaniRetezcu.php` | Spojování řetězců třemi způsoby | konzole, úkol 4 prohlížeč |
-| `5_escapovani.php` | Escapovací sekvence, apostrofy vs. uvozovky | prohlížeč (zdrojový kód stránky) |
+| `5_escapovani.php` | Escapovací sekvence, apostrofy vs. uvozovky | konzole i prohlížeč — viz poznámka pod tabulkou |
 | `6_souhrn.php` | Souhrnná úloha — obdélník | prohlížeč |
 | `7_typy.php` | Datové typy a jejich převody | konzole |
+
+> **Poznámka k `5_escapovani.php`:** úkoly s HTML značkami kontrolujte
+> v prohlížeči ve zdrojovém kódu stránky, ale **úkol 3 kontrolujte v konzoli** —
+> jde v něm o skutečný tabulátor, a prohlížeč tabulátory i více mezer za sebou
+> slévá do jedné mezery, takže byste v něm rozdíl nepoznali.
 
 ## Jak spustit skript
 
@@ -75,24 +80,32 @@ echo 'první řádek<br>';
 
 ## Jak poznáte, že to máte správně
 
-Každý úkol má v zadání uvedenou sekci **`Očekávaný výstup:`** — porovnejte s ní, co
-vám skript vypsal. To je vaše první kontrola a měli byste ji udělat vždy, ještě než
-odevzdáte.
+Úkoly, u kterých se kontroluje výstup, mají v zadání uvedenou sekci
+**`Očekávaný výstup:`** — porovnejte s ní, co vám skript vypsal. To je vaše první
+kontrola a měli byste ji udělat vždy, ještě než odevzdáte. Nemají ji úkoly, kde
+nic nevypisujete (experimenty a otázky do komentáře), a pak dvě výjimky popsané
+níže.
 
-Každý úkol je navíc označený:
+Každý úkol je označený jednou ze tří značek:
 
 - **`[hodnoceno automaticky]`** — po odevzdání ho zkontroluje autograding
   a dostanete zpětnou vazbu, jestli je splněný.
-- **`[nehodnoceno automaticky]`** — obvykle otázka, na kterou odpovídáte do
-  komentáře, nebo vlastní experiment. Stroj ji posoudit nedokáže, prohlíží ji učitel.
+- **`[výstup hodnocen automaticky, odpověď kontroluje učitel]`** — autograding
+  ověří jen vypsaný výstup. Otázku v komentáři stroj přečíst nedokáže, takže
+  i když bude úkol v autogradingu zelený, **bez vyplněné odpovědi hotový není.**
+- **`[nehodnoceno automaticky]`** — otázka do komentáře nebo vlastní experiment.
+  Autograding je vůbec nekontroluje, prohlíží je učitel.
 
 Dvě cvičení se od tohoto schématu záměrně odchylují:
 
 - **`6_souhrn.php` nemá na začátku `<?php`** a celé se vypisuje jako text. Není to
   chyba zadání, je to první úkol toho cvičení. Značka pro tučný text, kterou tam
-  budete potřebovat, je `<strong>`.
+  budete potřebovat, je `<strong>`. Výsledek varianty B tady schválně uvedený
+  není — musíte si ho spočítat.
 - **`7_typy.php` neuvádí očekávané výstupy.** Nejdřív si tipnete, co PHP udělá,
-  a pak si to ověříte. Jestli jste tipovali správně, se dozvíte z autogradingu.
+  a pak si to ověříte spuštěním. Autograding tam kontroluje jen to, že jste
+  výrazy opravdu vypsali — jestli jste tipovali správně, porovnáte se skutečným
+  výstupem sami a vaše tipy prohlíží učitel.
 
 ## Odevzdání
 

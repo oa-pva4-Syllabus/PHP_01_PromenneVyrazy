@@ -37,9 +37,14 @@ i `--runtime` je potřeba předat znovu.
 
 ## Bodování
 
-49 testů, **48 bodů**. Test `prostředí: PHP je dostupné` má 0 bodů — je to jen
-diagnostika (viz níže). Zbytek je 1 bod za jedno tvrzení, aby žák viděl, co přesně
-mu nefunguje, a dostal dílčí body.
+50 testů, **48 bodů**. Nulabodové jsou dva a oba jsou jen diagnostika:
+
+- `prostředí: PHP je dostupné` — viz níže.
+- `6: syntaxe je v pořádku (diagnostika, 0 bodů)` — `6_souhrn.php` je záměrně bez
+  `<?php`, takže na nevyplněném souboru `php -l` **projde** (je to prostý text)
+  a bod za něj by byl falešná pochvala. Nula bodů to řeší: žák za něj nic
+  nedostane, ale když si při doplňování `<?php` rozbije syntaxi, uvidí u toho
+  testu příčinu místo tří slepých chyb u hodnot (ty mají `actual-only`).
 
 Ověřeno lokálně na PHP 8.4.25:
 
@@ -75,8 +80,12 @@ Fallback — do `runtime.json` doplnit instalaci a nasadit znovu:
 - **Testy nesmí předepisovat formátování.** Žák si volí, jestli odřádkuje
   `PHP_EOL`, nebo `<br>`, a jestli obalí výsledek do `<strong>` nebo `<b>`.
   Tvrzení proto míří na krátké fragmenty bez HTML značek nebo regexem na hodnoty.
-- **Volné úlohy se nehodnotí.** Kde má žák psát vlastní odpověď do komentáře nebo
-  si volit vlastní hodnotu, je v zadání `[nehodnoceno automaticky]`.
+- **Značka úkolu musí odpovídat tomu, co test opravdu umí.** V zadáních jsou tři:
+  `[hodnoceno automaticky]` (test pokrývá celý úkol),
+  `[výstup hodnocen automaticky, odpověď kontroluje učitel]` (úkol má navíc
+  otázku do komentáře, kterou stroj přečíst nedokáže — úkol tedy může být zelený
+  a přesto nehotový) a `[nehodnoceno automaticky]` (test žádný).
+  Přidáváš-li k úkolu otázku do komentáře, změň i značku.
 - **`failure-details: actual-only`** je nastaveno u cvičení 7 a u varianty B
   v cvičení 6 — tam by výpis očekávané hodnoty prozradil odpověď, kterou má žák
   objevit sám.

@@ -38,11 +38,12 @@
   { "name": "5: apostrofy neinterpolují", "type": "io", "run": "php 5_escapovani.php", "expected": "a\\)\\s*\\$userName", "comparison": "regex", "points": 1 },
   { "name": "5: uvozovky interpolují", "type": "io", "run": "php 5_escapovani.php", "expected": "b\\)\\s*Karel", "comparison": "regex", "points": 1 },
   { "name": "5: escapované zpětné lomítko", "type": "io", "run": "php 5_escapovani.php", "expected": "Zpetne lomitko:\\s*\\\\", "comparison": "regex", "points": 1 },
-  { "name": "5: escapovaný tabulátor", "type": "io", "run": "php 5_escapovani.php", "expected": "Tabulator: sloupec1\\tsloupec2", "comparison": "regex", "points": 1 },
+  { "name": "5: escapovaný tabulátor", "type": "io", "run": "php 5_escapovani.php", "expected": "Tabulator:\\s*sloupec1\\tsloupec2", "comparison": "regex", "points": 1 },
   { "name": "5: escapovaný znak dolaru", "type": "io", "run": "php 5_escapovani.php", "expected": "Dolar:\\s*\\$100", "comparison": "regex", "points": 1 },
   { "name": "5: escapované uvozovky", "type": "io", "run": "php 5_escapovani.php", "expected": "Uvozovky:\\s*\"citace\"", "comparison": "regex", "points": 1 },
   { "name": "5: bonus - htmlspecialchars", "type": "io", "run": "php 5_escapovani.php", "expected": "&lt;script&gt;", "comparison": "included", "points": 1 },
 
+  { "name": "6: syntaxe je v pořádku (diagnostika, 0 bodů)", "type": "run", "run": "php -l 6_souhrn.php", "points": 0 },
   { "name": "6: obsah obdélníka (varianta B)", "type": "io", "run": "php 6_souhrn.php", "expected": "obsah[^0-9]{0,60}90", "comparison": "regex", "failure-details": "actual-only", "points": 1 },
   { "name": "6: obvod obdélníka (varianta B)", "type": "io", "run": "php 6_souhrn.php", "expected": "obvod[^0-9]{0,60}39", "comparison": "regex", "failure-details": "actual-only", "points": 1 },
   { "name": "6: výsledky jsou tučně", "type": "io", "run": "php 6_souhrn.php", "expected": "<(strong|b)>", "comparison": "regex", "points": 1 },

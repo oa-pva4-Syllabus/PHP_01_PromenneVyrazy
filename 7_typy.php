@@ -6,8 +6,13 @@
 // Konvence: názvy proměnných anglicky, camelCase, bez diakritiky.
 //
 // POZOR - tohle cvičení je jiné než ostatní: očekávané výstupy tu schválně
-// uvedené NEJSOU. Nejdřív si tipnete, co PHP udělá, a pak si to ověříte.
-// Zpětnou vazbu, jestli to máte správně, vám dá autograding po odevzdání.
+// uvedené NEJSOU. Nejdřív si tipnete, co PHP udělá, a pak si to ověříte
+// spuštěním - skutečný výstup je vaše odpověď.
+//
+// Autograding tady kontroluje jen to, že jste všechny výrazy opravdu vypsali.
+// Jestli jste tipovali správně, pozná jen ten, kdo si vaše tipy přečte -
+// porovnejte je se skutečným výstupem sami a nechte je v souboru napsané,
+// prohlíží je učitel.
 
 
 /* --- ÚKOL 1 --- [hodnoceno automaticky]
