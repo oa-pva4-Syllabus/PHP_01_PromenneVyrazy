@@ -2,6 +2,51 @@
 
 Tato složka je **učitelský podklad**, ne součást řešení. Žák do ní nic nepíše.
 
+> [!IMPORTANT]
+> **Stav: neodzkoušeno, nenasazeno.** Testy nikdy neběžely na skutečném
+> GitHub runneru. Ze základní podoby cvičení jsou proto vyřazené — větev
+> `master` je bez nich a žáci je k dispozici nemají. Tahle větev je odkladiště,
+> ze kterého se dají vrátit, až proběhne ověření na jednom skutečném odevzdání.
+>
+> Ověřeno je zatím jen lokálně (PHP 8.4.25, emulace semantiky deklarativních
+> testů): vzorové řešení 48/48, nevyplněné zadání 6/48.
+
+## Testy jsou svázané se starou podobou zadání
+
+Tahle větev drží zadání ve stavu, pro který byly testy napsané. Na `master` se
+zadání od té doby změnilo, takže **testy na aktuální zadání nepasují**. Před
+oživením je potřeba srovnat dvě věci:
+
+- **Cvičení 6 už nemá variantu B.** Rozměry 7.5 a 12 existovaly jen proto, aby
+  se test vyhnul echu komentáře v souboru bez `<?php`. Na `master` zůstaly jen
+  rozměry 15 a 20 s uvedeným očekávaným výstupem, takže tři tvrzení
+  `6: obsah…`, `6: obvod…` a `6: výsledky jsou tučně` míří na hodnoty, které
+  žák nemá zadané. Buď variantu B do zadání vrátit, nebo tyhle testy přepsat —
+  a pozor, hodnoty 15, 20, 300 a 70 jsou v komentáři, takže test na ně projde
+  i nevyplněnému souboru.
+- **Značky úkolů se změnily** z `[hodnoceno automaticky]` /
+  `[nehodnoceno automaticky]` na `[+ odpověď v komentáři]` /
+  `[odpověď v komentáři]` / `[bonus]`. Textace v zadáních i v `README.md`
+  na `master` už žádnou automatickou kontrolu neslibuje; při oživení se to
+  musí vrátit, jinak bude dokumentace lhát v opačném směru.
+
+## Než se to nasadí, pozor na `.github/`
+
+Testy jsou tady podle preference umístění, ale `.github/` **nic neschová
+a neizoluje**:
+
+- Classroom 50 **re-fetchuje `.github/` z templatu při každém
+  `gh student submit`**. Cokoli tady bude, se do žákovských repozitářů kopíruje
+  opakovaně, ne jen při prvním přijetí úlohy.
+- Žák si tedy může přečíst hodnoty, které má u cvičení 6 a 7 objevit sám —
+  přesně to, co má `failure-details: actual-only` skrývat. Pokud má být
+  tipování ve cvičení 7 k něčemu, musí `tests.json` skončit mimo template:
+  buď na téhle větvi (do žákovských repů se kopíruje jen default branch),
+  nebo přímo v systémovém repu `oa-pva4-2026-2027/classroom50`.
+- **`.github/workflows/autograde.yaml` se do templatu nesmí dostat nikdy** —
+  ten soubor píše `gh student accept` a kopie v templatu by grading rozbila.
+  Cokoli jiného pod `.github/` je z tohoto pohledu v pořádku.
+
 ## Kde je kanonický zdroj testů
 
 Deklarativní testy Classroom 50 žijí **inline v `assignments.json`** v systémovém
@@ -21,8 +66,8 @@ u zadání a znovu použít v dalším ročníku.
 gh teacher assignment add oa-pva4-2026-2027 <classroom> php-01-promenne \
     --name "PHP 01 – Proměnné a výrazy" \
     --template oa-pva4-Syllabus/PHP_01_PromenneVyrazy \
-    --tests autograding/tests.json \
-    --runtime autograding/runtime.json
+    --tests .github/autograding/tests.json \
+    --runtime .github/autograding/runtime.json
 ```
 
 Kontrola a dílčí úpravy:
