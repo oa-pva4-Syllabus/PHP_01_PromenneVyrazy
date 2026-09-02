@@ -12,7 +12,7 @@
 // V apostrofech mají zvláštní význam jen \' a \\.
 
 
-/* --- ÚKOL 1 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
+/* --- ÚKOL 1 --- [+ odpověď v komentáři]
  *
  * Deklarujte proměnnou `$imageUrl` s hodnotou `https://placehold.co/200x100`.
  *
@@ -33,7 +33,7 @@
  */
 
 
-/* --- ÚKOL 2 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
+/* --- ÚKOL 2 --- [+ odpověď v komentáři]
  *
  * Deklarujte proměnnou `$userName` s hodnotou `Karel`.
  * Vypište dva řádky:
@@ -52,7 +52,7 @@
  */
 
 
-/* --- ÚKOL 3 --- [hodnoceno automaticky]
+/* --- ÚKOL 3 ---
  *
  * Vypište čtyři řádky níže. Všechny řetězce zapište v DVOJITÝCH UVOZOVKÁCH,
  * takže se bez escapovacích sekvencí neobejdete. Mezi `sloupec1`
@@ -66,7 +66,7 @@
  */
 
 
-/* --- ÚKOL 4 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
+/* --- ÚKOL 4 --- [+ odpověď v komentáři]
  *
  * Bonus - proč se escapování řeší i kvůli bezpečnosti.
  *

@@ -6,7 +6,7 @@
 // Konvence: názvy proměnných anglicky, camelCase, bez diakritiky.
 
 
-/* --- ÚKOL 1 --- [hodnoceno automaticky]
+/* --- ÚKOL 1 ---
  *
  * Vypište text `Hello, world!`
  *
@@ -15,7 +15,7 @@
  */
 
 
-/* --- ÚKOL 2 --- [hodnoceno automaticky]
+/* --- ÚKOL 2 ---
  *
  * Deklarujte proměnnou `$firstName` s vaším jménem.
  * Na dalším řádku vypište větu `Jmenuji se <jméno>.`, kde `<jméno>` bude
@@ -26,7 +26,7 @@
  */
 
 
-/* --- ÚKOL 3 --- [nehodnoceno automaticky]
+/* --- ÚKOL 3 --- [odpověď v komentáři]
  *
  * Spusťte tento soubor oběma způsoby podle README.md - v konzoli i v prohlížeči.
  * Do komentáře níže napište, co je na obou výstupech jiné a proč.

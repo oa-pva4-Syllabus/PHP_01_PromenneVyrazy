@@ -9,13 +9,11 @@
 // uvedené NEJSOU. Nejdřív si tipnete, co PHP udělá, a pak si to ověříte
 // spuštěním - skutečný výstup je vaše odpověď.
 //
-// Autograding tady kontroluje jen to, že jste všechny výrazy opravdu vypsali.
-// Jestli jste tipovali správně, pozná jen ten, kdo si vaše tipy přečte -
-// porovnejte je se skutečným výstupem sami a nechte je v souboru napsané,
-// prohlíží je učitel.
+// Tipy nechte v souboru napsané i po ověření - právě porovnání tipu
+// se skutečností je smysl tohoto cvičení a učitel se dívá na obojí.
 
 
-/* --- ÚKOL 1 --- [hodnoceno automaticky]
+/* --- ÚKOL 1 --- [odpověď v komentáři]
  *
  * PHP je jazyk se slabým typováním - když spolu potřebuje spočítat text
  * a číslo, sám si je převede. Někdy to udělá tak, jak čekáte, jindy ne.
@@ -40,7 +38,7 @@
  */
 
 
-/* --- ÚKOL 2 --- [nehodnoceno automaticky]
+/* --- ÚKOL 2 --- [odpověď v komentáři]
  *
  * U jednoho z výrazů vypíše PHP navíc varování (Warning), i když nějaký
  * výsledek vrátí. Najděte který a do komentáře napište, co vám PHP vyčítá
@@ -50,7 +48,7 @@
  */
 
 
-/* --- ÚKOL 3 --- [nehodnoceno automaticky]
+/* --- ÚKOL 3 --- [odpověď v komentáři]
  *
  * Dva z výrazů srovnávají hodnotu operátorem `==`. Vyzkoušejte je znovu
  * s operátorem `===` a do komentáře napište, jak se výsledek změnil

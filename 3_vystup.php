@@ -10,7 +10,7 @@
 // čím jste řádky oddělili.
 
 
-/* --- ÚKOL 1 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
+/* --- ÚKOL 1 --- [+ odpověď v komentáři]
  *
  * Deklarujte proměnné `$a` = 15 a `$b` = 4.
  * Proveďte s nimi pět matematických operací a každý výsledek uložte
@@ -34,7 +34,7 @@
  */
 
 
-/* --- ÚKOL 2 --- [hodnoceno automaticky]
+/* --- ÚKOL 2 ---
  *
  * Deklarujte tři proměnné:
  *   `$alpha` = 200
@@ -60,7 +60,7 @@
  */
 
 
-/* --- ÚKOL 3 --- [nehodnoceno automaticky]
+/* --- ÚKOL 3 --- [bonus]
  *
  * Bonus: záměnu dvou proměnných z úkolu 2 zvládne PHP i bez odkládací
  * proměnné, jediným příkazem. Zkuste najít jak a napsat to pod tento

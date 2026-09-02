@@ -7,7 +7,7 @@
 // Konvence: názvy proměnných anglicky, camelCase, bez diakritiky.
 
 
-/* --- ÚKOL 1 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
+/* --- ÚKOL 1 --- [+ odpověď v komentáři]
  *
  * Deklarujte proměnné `$firstName` (vaše jméno) a `$lastName` (vaše příjmení).
  * Stejnou větu pak vypište TŘEMI různými způsoby, každý na samostatný řádek
@@ -28,7 +28,7 @@
  */
 
 
-/* --- ÚKOL 2 --- [hodnoceno automaticky]
+/* --- ÚKOL 2 ---
  *
  * Deklarujte proměnnou `$subject` a sestavte výstup
  * `Vitejte na obsahu webu <subjekt>`, kde `<subjekt>` bude hodnota proměnné.
@@ -43,7 +43,7 @@
  */
 
 
-/* --- ÚKOL 3 --- [hodnoceno automaticky]
+/* --- ÚKOL 3 ---
  *
  * Deklarujte proměnnou `$content` s hodnotou `PHP`.
  * Pak k ní dvěma dalšími příkazy postupně přidejte text ` je` a ` skvele.`
@@ -55,7 +55,7 @@
  */
 
 
-/* --- ÚKOL 4 --- [hodnoceno automaticky]
+/* --- ÚKOL 4 ---
  *
  * Obsah proměnné `$content` z úkolu 3 vypište ještě jednou, tentokrát
  * obalený v HTML značce odstavce. Výstup si otevřete v prohlížeči.

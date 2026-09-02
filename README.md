@@ -86,26 +86,23 @@ kontrola a měli byste ji udělat vždy, ještě než odevzdáte. Nemají ji úk
 nic nevypisujete (experimenty a otázky do komentáře), a pak dvě výjimky popsané
 níže.
 
-Každý úkol je označený jednou ze tří značek:
+Úkoly navíc můžou mít značku, která říká, že samotný výstup nestačí:
 
-- **`[hodnoceno automaticky]`** — po odevzdání ho zkontroluje autograding
-  a dostanete zpětnou vazbu, jestli je splněný.
-- **`[výstup hodnocen automaticky, odpověď kontroluje učitel]`** — autograding
-  ověří jen vypsaný výstup. Otázku v komentáři stroj přečíst nedokáže, takže
-  i když bude úkol v autogradingu zelený, **bez vyplněné odpovědi hotový není.**
-- **`[nehodnoceno automaticky]`** — otázka do komentáře nebo vlastní experiment.
-  Autograding je vůbec nekontroluje, prohlíží je učitel.
+- **bez značky** — úkol něco vypisuje a vy si výstup porovnáte s očekávaným.
+- **`[+ odpověď v komentáři]`** — kromě výstupu má úkol i otázku. **Bez
+  vyplněné odpovědi hotový není**, i když vám výstup vyjde správně.
+- **`[odpověď v komentáři]`** — úkol nic nevypisuje, jde jen o odpověď
+  nebo o experiment, ze kterého si máte něco odvodit.
+- **`[bonus]`** — nepovinné. Vyzkoušejte, až budete mít zbytek hotový.
 
 Dvě cvičení se od tohoto schématu záměrně odchylují:
 
 - **`6_souhrn.php` nemá na začátku `<?php`** a celé se vypisuje jako text. Není to
   chyba zadání, je to první úkol toho cvičení. Značka pro tučný text, kterou tam
-  budete potřebovat, je `<strong>`. Výsledek varianty B tady schválně uvedený
-  není — musíte si ho spočítat.
+  budete potřebovat, je `<strong>`.
 - **`7_typy.php` neuvádí očekávané výstupy.** Nejdřív si tipnete, co PHP udělá,
-  a pak si to ověříte spuštěním. Autograding tam kontroluje jen to, že jste
-  výrazy opravdu vypsali — jestli jste tipovali správně, porovnáte se skutečným
-  výstupem sami a vaše tipy prohlíží učitel.
+  a pak si to ověříte spuštěním — skutečný výstup je odpověď. Své tipy nechte
+  v souboru napsané, právě jejich porovnání se skutečností je smysl cvičení.
 
 ## Odevzdání
 
@@ -121,11 +118,6 @@ git push
 Vždy si zkontrolujte, že jsou všechny změny skutečně nahrané na GitHubu — tedy že
 jste provedli **`commit` i `push`**. Co není pushnuté, to jste neodevzdali.
 
-Po odevzdání se spustí autograding a k vašemu odevzdání se objeví výsledek
-s přehledem, které úkoly prošly a které ne. Pokud něco neprošlo, můžete opravit
-a pushnout znovu.
-
----
-
-Složka `autograding/` obsahuje učitelský podklad pro Classroom 50, nikoli část
-zadání — nic v ní neupravujte.
+Odevzdanou práci prohlíží učitel. Automatická kontrola po odevzdání neběží,
+takže jediná zpětná vazba, kterou máte hned k dispozici, je porovnání
+s očekávaným výstupem — nepřeskakujte ho.

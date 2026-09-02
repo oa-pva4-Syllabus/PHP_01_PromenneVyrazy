@@ -6,7 +6,7 @@
 // Konvence: názvy proměnných anglicky, camelCase, bez diakritiky.
 
 
-/* --- ÚKOL 1 --- [hodnoceno automaticky]
+/* --- ÚKOL 1 ---
  *
  * Deklarujte proměnnou `$name`, jejíž hodnotou bude vaše jméno.
  * Vypište ji ve formátu `Jmeno: <hodnota>`.
@@ -16,7 +16,7 @@
  */
 
 
-/* --- ÚKOL 2 --- [hodnoceno automaticky]
+/* --- ÚKOL 2 ---
  *
  * Deklarujte čtyři proměnné a nastavte jim hodnoty tak, aby odpovídaly
  * datovému typu v názvu:
@@ -36,7 +36,7 @@
  */
 
 
-/* --- ÚKOL 3 --- [výstup hodnocen automaticky, odpověď kontroluje učitel]
+/* --- ÚKOL 3 --- [+ odpověď v komentáři]
  *
  * Deklarujte proměnnou `$nothing` a nastavte jí hodnotu `null`.
  * Vypište ji funkcí `var_dump()`.
@@ -51,7 +51,7 @@
  */
 
 
-/* --- ÚKOL 4 --- [hodnoceno automaticky]
+/* --- ÚKOL 4 ---
  *
  * Deklarujte konstantu `SCHOOL_YEAR` s hodnotou `2026`.
  * Konstanta se zapisuje klíčovým slovem `const`, píše se VELKÝMI písmeny
@@ -64,7 +64,7 @@
  */
 
 
-/* --- ÚKOL 5 --- [nehodnoceno automaticky]
+/* --- ÚKOL 5 --- [odpověď v komentáři]
  *
  * Experiment: pod tento komentář zkuste konstantě `SCHOOL_YEAR` přiřadit
  * jinou hodnotu a soubor spusťte. Do komentáře zapište, co PHP udělalo.
