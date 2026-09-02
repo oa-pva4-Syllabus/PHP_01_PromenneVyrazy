@@ -69,8 +69,10 @@
  * Experiment: pod tento komentář zkuste konstantě `SCHOOL_YEAR` přiřadit
  * jinou hodnotu a soubor spusťte. Do komentáře zapište, co PHP udělalo.
  *
- * POZOR: řádek s přiřazením potom zakomentujte. Kdybyste ho nechali,
- * skript spadne s chybou a ostatní úkoly v tomto souboru se nevyhodnotí.
+ * POZOR: řádek s přiřazením potom ZAKOMENTUJTE. Chyba, kterou uvidíte, je
+ * totiž chyba syntaxe - PHP soubor kvůli ní vůbec nespustí a nevypíše ani
+ * úkoly 1 až 4. Kdybyste ten řádek v souboru nechali, přijdete o body
+ * za celé toto cvičení.
  *
  * Co se stalo:
  */
